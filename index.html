@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrithik Karn | Android & Backend Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .typed-cursor {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #FF6B6B;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-white overflow-x-hidden scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 left-0 bg-black bg-opacity-60 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <a href="">
+                <h1 class="text-2xl font-bold text-pink-400">Hrithik Karn</h1>
+            </a>
+            <ul class="hidden md:flex space-x-6 font-semibold">
+                <li><a href="#about" class="hover:text-pink-300 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-pink-300 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-pink-300 transition">Contact</a></li>
+                <li><a href="#resume" class="hover:text-pink-300 transition">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-6 md:px-20 pt-20"
+        id="home">
+        <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
+                Hello, I'm <span class="text-pink-400">Hrithik</span>
+            </h2>
+            <h3 class="text-2xl md:text-3xl mb-6">
+                <span id="typed-text" class="text-yellow-400"></span>
+            </h3>
+            <div class="mt-4">
+                <a href="#projects"
+                    class="bg-pink-500 hover:bg-pink-600 px-6 py-2 rounded-full font-semibold transition duration-300">View
+                    Projects</a>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center" data-aos="fade-left">
+            <img src="assets/my_image.jpg" alt="Hrithik Karn"
+                class="rounded-full w-64 h-64 object-cover shadow-xl hover:scale-105 transition duration-500">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about"
+        class="scroll-mt-28 py-20 px-6 md:px-20 bg-gradient-to-r from-[#2c5364] via-[#203a43] to-[#0f2027]"
+        data-aos="fade-up">
+
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+        <p class="max-w-3xl mx-auto text-center text-lg text-gray-200 leading-relaxed">
+            I am a passionate Android Developer who loves building creative apps with modern UI. I also create powerful
+            backend APIs using Python Flask to support dynamic, scalable applications.
+            With a strong focus on UI/UX and user satisfaction, I continuously explore vibrant coding experiences.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-mt-28 py-20 px-6 md:px-20 bg-black bg-opacity-40" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Project Card Example -->
+            <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition">
+                <h3 class="text-xl font-semibold text-pink-300 mb-2">Library Management App</h3>
+                <p class="text-gray-300">A library system with student-book linking, search, and issue features using
+                    Python and Flask.</p>
+            </div>
+            <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition">
+                <h3 class="text-xl font-semibold text-pink-300 mb-2">Face Recognition Attendance</h3>
+                <p class="text-gray-300">Real-time face recognition attendance using OpenCV and Python.</p>
+            </div>
+            <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition">
+                <h3 class="text-xl font-semibold text-pink-300 mb-2">Food Delivery App</h3>
+                <p class="text-gray-300">A fast, user-friendly food delivery app built with Python & Flutter — offering
+                    real-time tracking, secure payments, and smooth ordering.</p>
+            </div>
+            <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition">
+                <h3 class="text-xl font-semibold text-pink-300 mb-2">Online Learning App</h3>
+                <p class="text-gray-300">A fast, user-friendly learning app built with Python & Flutter — A smart,
+                    flexible platform for learning anytime, anywhere.</p>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"
+        class="scroll-mt-28 py-20 px-6 md:px-20 bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]"
+        data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-center mb-8">Let’s Work Together</h2>
+        <p class="text-center mb-10 text-lg text-gray-300">Have a project in mind or just want to say hello? Reach out!
+        </p>
+
+        <div
+            class="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all">
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="entry.603732250" required
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="entry.923635048" required
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg" />
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="entry.487052420" rows="5" required
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg"></textarea>
+                </div>
+                <div class="text-center" style="justify-items: center;">
+                    <button id="submitBtn" type="submit"
+                        class="relative px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition duration-300 flex items-center justify-center gap-2">
+                        <span id="btnText">Send Message</span>
+                        <svg id="loadingSpinner" class="w-4 h-4 animate-spin hidden" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="white" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="white" d="M4 12a8 8 0 018-8v8H4z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="#projects"
+                class="inline-block mt-6 px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                Let’s Work Together 💼
+            </a>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal"
+        class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden z-50">
+        <div class="bg-white text-black rounded-xl p-8 max-w-md w-full shadow-lg text-center animate-fade-in-up">
+            <h2 class="text-2xl font-bold mb-4">🎉 Message Sent!</h2>
+            <p class="text-gray-700 mb-6">Thanks for reaching out. I’ll get back to you soon!</p>
+            <button onclick="closeModal()"
+                class="mt-4 px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal"
+        class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden z-50">
+        <div class="bg-white text-black rounded-xl p-8 max-w-md w-full shadow-lg text-center animate-fade-in-up">
+            <h2 class="text-2xl font-bold mb-4 text-red-600">⚠️ Submission Failed</h2>
+            <p class="text-gray-700 mb-6">Something went wrong. Please try again later.</p>
+            <button onclick="closeErrorModal()"
+                class="mt-4 px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full transition duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Resume Anchor -->
+    <section id="resume" class="scroll-mt-28 py-20 px-6 md:px-20 bg-black text-center text-white" data-aos="fade-up">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-6 tracking-tight">Resume</h2>
+            <p class="text-gray-300 mb-8 text-sm md:text-base">
+                Click the button below to view or download my complete resume in a new tab.
+            </p>
+            <a href="/resume.html" target="_blank"
+                class="inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-lg shadow-md transition duration-300">
+                Show Resume
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-6 bg-black bg-opacity-60 text-gray-300">
+        <div class="mb-4">
+            <a href="https://instagram.com/its_karn06" target="_blank" rel="noopener"
+                class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-black font-bold rounded-full shadow-md hover:scale-105 transform transition duration-300">
+                Follow Me on Instagram 📷
+            </a>
+        </div>
+        <!-- <p class="text-sm mt-2">&copy; 2025 Hrithik Karn. All rights reserved.</p> -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        new Typed("#typed-text", {
+            strings: ["Android Developer", "Backend Developer", "Creative Coder"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+    <script>
+        const form = document.getElementById('contactForm');
+        const modal = document.getElementById('successModal');
+        const errorModal = document.getElementById('errorModal');
+
+        const btn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const spinner = document.getElementById('loadingSpinner');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            // Show loading spinner
+            spinner.classList.remove('hidden');
+            btnText.textContent = 'Sending...';
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            try {
+                await fetch("https://docs.google.com/forms/d/e/1FAIpQLSfaEKW6xSFzFA2SiR6d6DKtQYfuS2figXOHTLSRYRuwTUf1-A/formResponse", {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: formData,
+                });
+
+                modal.classList.remove('hidden');
+                setTimeout(() => closeModal(), 4000);
+                form.reset();
+            } catch (error) {
+                errorModal.classList.remove('hidden');
+            } finally {
+                // Reset button
+                spinner.classList.add('hidden');
+                btnText.textContent = 'Send Message';
+                btn.disabled = false;
+            }
+        });
+
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        function closeErrorModal() {
+            errorModal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+
+</html>

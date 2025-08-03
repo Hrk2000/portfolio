@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrithik Karn - Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0F172A;
+            color: #F1F5F9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .resume-card {
+            background: #1E293B;
+            max-width: 700px;
+            width: 100%;
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .resume-card:hover {
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #38BDF8;
+            margin-bottom: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #E2E8F0;
+            margin-bottom: 0.3rem;
+        }
+
+        .role {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #94A3B8;
+            margin-bottom: 1.2rem;
+        }
+
+        .pdf-btn {
+            display: inline-block;
+            margin: 1rem 0 2rem;
+            padding: 0.6rem 1.2rem;
+            background: #38BDF8;
+            color: #0F172A;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .pdf-btn:hover {
+            background: #0ea5e9;
+        }
+
+        p.intro {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #CBD5E1;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #FBBF24;
+            margin-bottom: 0.6rem;
+            border-bottom: 2px solid #38BDF8;
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.3rem;
+            color: #E2E8F0;
+        }
+
+        ul li::before {
+            content: '✔';
+            color: #38BDF8;
+            position: absolute;
+            left: 0;
+            font-size: 1rem;
+            top: 0;
+        }
+
+        @media (max-width: 640px) {
+            .resume-card {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p.intro {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="resume" class="resume-card" aria-label="Hrithik Karn Resume">
+        <img src="/assets/my_image.jpg" alt="Hrithik Karn" class="profile-img" />
+        <h1>Hrithik Karn</h1>
+        <p class="role">Android Developer (Flutter) & Backend Developer (Python Flask)</p>
+
+        <!-- <button id="view-pdf-btn" onclick="openInNewTab()"
+            style="margin-top: 2rem; padding: 0.5rem 1rem; font-size: 12px;">
+            View in PDF
+        </button> -->
+
+        <p class="intro">
+            A self-driven developer passionate about building clean, efficient, and scalable applications—both on the
+            frontend and backend.
+            I primarily work with <strong>Flutter</strong> for mobile apps and <strong>Python Flask</strong> for backend
+            APIs.
+            I’m always open to collaborating on meaningful projects.
+        </p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Flutter, Dart</li>
+            <li>Python, Flask</li>
+            <li>REST APIs, Firebase, SQLite</li>
+            <li>Git, Responsive UI, UI/UX Implementation</li>
+        </ul>
+
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>Library Management App</strong> – Book and student management with dynamic data</li>
+            <li><strong>Face Recognition Attendance System</strong> – Real-time attendance using OpenCV</li>
+            <li><strong>Food Delivery App</strong> – Flutter-based app with cart, auth & order system</li>
+            <li><strong>Online Learning App</strong> – Course and quiz modules with REST backend</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>3+ years of experience in mobile and backend development</li>
+            <li>Built scalable APIs with Flask for multiple apps</li>
+            <li>Hands-on with full-stack development in personal and client-based projects</li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+            <li>Graduated with B.Sc. in Physics</li>
+        </ul>
+    </section>
+</body>
+
+</html>
